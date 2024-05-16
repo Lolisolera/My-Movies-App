@@ -13,22 +13,24 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     {% block title %}
-    <title>Route Page</title>
+    <title>API Base</title>
     {% endblock %}
-
-
 
 </head>
 
-<body>
+<body class="body">
+    <nav>
+        <a href="/menu">Menu</a>
+        <a href="/add">Add Film</a>
+        <a href="/update">Update Film</a>
+        <a href="/delete">Delete Film</a>
+        <a href="/list">Films List</a>
+
+    </nav>
     {% block content %}
-    <h1>Base</h1>
+    <h1>API Base</h1>
     {% endblock %}
 
-
-
-    <!-- Optional JavaScript -->
-    <script src="static/index.js" charset="UTF-8"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -40,6 +42,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 
 
 </body>

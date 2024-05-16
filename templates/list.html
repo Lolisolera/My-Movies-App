@@ -1,0 +1,19 @@
+{%extends 'base.html' %}
+
+
+{% block title %}
+<title>Films List Page</title>
+{% endblock %}
+
+
+{% block content %}
+<h1>Films list</h1>
+<ul>
+    {% for film in films %}
+    <li>{{ film.filmID }}: {{ film.title }} - {{ film.yearReleased }} - {{ film.rating }} - {{ film.duration }} - {{
+        film.genre }}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

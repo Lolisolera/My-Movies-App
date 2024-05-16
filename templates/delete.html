@@ -1,0 +1,19 @@
+{%extends 'base.html' %}
+
+
+{% block title %}
+<title>Delete Films Page</title>
+{% endblock %}
+
+
+{% block content %}
+<h1>Delete Films</h1>
+<form action="/delete" method="post">
+    <label for="filmID">FilmID:</label>
+    <input type="text" id="filmID" name="filmID" required> <br><br>
+    <button class="button" type="submit">Delete Film</button>
+
+</form>
+
+
+{% endblock %}

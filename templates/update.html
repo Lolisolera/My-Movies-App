@@ -1,0 +1,31 @@
+{%extends 'base.html' %}
+
+
+{% block title %}
+<title>Update Films Page</title>
+{% endblock %}
+
+
+{% block content %}
+<h1>Update Films</h1>
+<form action="/update" method="post">
+    <label for="filmID">Film ID:</label>
+    <input type="text" id="filmID" name="filmID" required>
+    <br>
+    <label for="field">Choose a Field to Update:</label>
+    <select id="field" name="field">
+        <option value="title">Title</option>
+        <option value="yearReleased">Year Released</option>
+        <option value="rating">Rating</option>
+        <option value="duration">Duration</option>
+        <option value="genre">Genre</option>
+    </select>
+    <br>
+    <label for="newValue">New Value:</label>
+    <input type="text" id="newValue" name="newValue">
+    <br><br>
+    <button class="button" type="submit">Update Film</button>
+
+</form>
+
+{% endblock %}
