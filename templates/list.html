@@ -2,12 +2,12 @@
 
 
 {% block title %}
-<title>Films List Page</title>
+<title>Movies List Page</title>
 {% endblock %}
 
 
 {% block content %}
-<h1>Films list</h1>
+<h1>Movies list</h1>
 <ul>
     {% for film in films %}
     <li>{{ film.filmID }}: {{ film.title }} - {{ film.yearReleased }} - {{ film.rating }} - {{ film.duration }} - {{
