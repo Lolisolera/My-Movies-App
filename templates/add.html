@@ -2,12 +2,12 @@
 
 
 {% block title %}
-<title>Add Films Page</title>
+<title>Add Movies Page</title>
 {% endblock %}
 
 
 {% block content %}
-<h1>Add a New Film</h1>
+<h1>Add a New Movie</h1>
 
 <form class="form-container" method="POST" action="{{ url_for('add') }}">
     <label class="form-label" for="title">Title:</label>
@@ -29,7 +29,7 @@
     <input class="form-input" type="text" name="genre" pattern="[A-Za-z ]+" title="Only letters and spaces are allowed"
         required><br>
 
-    <button class="form-submit" type="submit">Add Film</button>
+    <button class="form-submit" type="submit">Add Movie</button>
 </form>
 
 
