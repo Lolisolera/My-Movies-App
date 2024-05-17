@@ -2,14 +2,14 @@
 
 
 {% block title %}
-<title>Update Films Page</title>
+<title>Update Movies Page</title>
 {% endblock %}
 
 
 {% block content %}
-<h1>Update Films</h1>
+<h1>Update Movie</h1>
 <form action="/update" method="post">
-    <label for="filmID">Film ID:</label>
+    <label for="filmID">Movie ID:</label>
     <input type="text" id="filmID" name="filmID" required>
     <br>
     <label for="field">Choose a Field to Update:</label>
@@ -24,7 +24,7 @@
     <label for="newValue">New Value:</label>
     <input type="text" id="newValue" name="newValue">
     <br><br>
-    <button class="button" type="submit">Update Film</button>
+    <button class="button" type="submit">Update Movie</button>
 
 </form>
 
