@@ -78,7 +78,7 @@ def add():
             return "Invalid characters in the title. Please use only letters and spaces."
 
         if not (1 <= rating <= 5):
-            return "Invalid rating. Please enter a number between 1 and 5."
+            return "Invalid rating. Please enter a number between 1 and 5"
 
         if duration_str is not None:
             try:
