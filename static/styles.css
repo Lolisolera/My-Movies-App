@@ -9,7 +9,8 @@ h1 {
 
 h2 {
     color: #332C39;
-    padding-left: 20px;
+    padding-left: 45px;
+
 
 }
 
@@ -150,21 +151,19 @@ button:hover {
 
 ol {
     max-width: 300px;
-    margin: 25px;
-    padding: 20px;
+    margin: 45px;
+    padding: 15px;
+    padding-left: 35px;
     background-color: #f4f4f4;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
-
-
 ol a:hover {
     color: #EB1D36;
-
-
 }
+
 
 ul {
     max-width: 800px;
