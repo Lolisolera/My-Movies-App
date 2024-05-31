@@ -99,8 +99,8 @@ nav a:hover {
 
 /* Style for the submit button */
 .form-submit {
-    background-color: #FFC300;
-    color: black;
+    background-color: #EB1D36;
+    color: #fff;
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
@@ -109,8 +109,8 @@ nav a:hover {
 
 /* Hover effect for the submit button */
 .form-submit:hover {
-    background-color: #EB1D36;
-    color: #fff;
+    background-color: #FFC300;
+    color: black;
 }
 
 
@@ -140,8 +140,8 @@ input {
 }
 
 button {
-    background-color: #FFC300;
-    color: black;
+    background-color: #EB1D36;
+    color: #fff;
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -153,8 +153,8 @@ button {
 
 
 button:hover {
-    background-color: #EB1D36;
-    color: #fff;
+    background-color: #FFC300;
+    color: black;
 }
 
 ol {
