@@ -13,18 +13,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!--Favicon link-->
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
     {% block title %}
     <title>API Base</title>
     {% endblock %}
 
-    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
 
 </head>
 
 <body class="body">
 
     <nav>
-
+        <img src="{{ url_for('static', filename='favicon.ico') }}" alt="Logo" class="navbar-logo">
         <a href="/menu">Menu</a>
         <a href="/list">Movies List</a>
         <a href="/add">Add Movie</a>

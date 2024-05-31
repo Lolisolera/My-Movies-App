@@ -34,21 +34,26 @@ body {
     background-color: #ddd;
 }
 
-
+/*Nav with logo */
 nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
     background-color: #EB1D36;
     overflow: hidden;
 }
 
-nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    margin-left: 100px;
+nav img.navbar-logo {
+    height: 40px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
 
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 14px 16px;
 }
 
 nav a:hover {
