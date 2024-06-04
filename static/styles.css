@@ -119,7 +119,7 @@ li {
 }
 
 
-/*Delete form */
+/*Update and Delete form */
 
 form {
     background-color: #f4f4f4;
@@ -129,6 +129,10 @@ form {
     width: 300px;
     margin: auto;
     /* Center the form horizontally */
+}
+
+.form {
+    padding-top: 50px;
 }
 
 label {
