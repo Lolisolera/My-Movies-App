@@ -18,6 +18,9 @@ h1 {
 
 }
 
+h1.margin {
+    margin-bottom: 50px;
+}
 
 h2 {
     color: #332C39;
@@ -131,9 +134,6 @@ form {
     /* Center the form horizontally */
 }
 
-.form {
-    padding-top: 50px;
-}
 
 label {
     display: block;
