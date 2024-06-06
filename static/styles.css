@@ -24,7 +24,7 @@ h1.margin {
 
 h2 {
     color: #332C39;
-    padding-left: 15px;
+    padding: 15px;
     display: flex;
     justify-content: center;
 }
@@ -167,28 +167,26 @@ button:hover {
     color: black;
 }
 
+
 ol {
     max-width: 300px;
-    margin: 45px;
-    padding: 15px;
-    padding-left: 35px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-
-ol a:hover {
-    color: #EB1D36;
 }
 
 
 ul {
     max-width: 800px;
+}
+
+
+ol,
+ul {
     margin: auto;
     padding: 30px;
     background-color: #f4f4f4;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+ol a:hover {
+    color: #EB1D36;
 }
