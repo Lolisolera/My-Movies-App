@@ -22,6 +22,16 @@ h1.margin {
     margin-bottom: 40px;
 }
 
+.movie {
+    width: 500px;
+    height: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
 
 h2 {
     color: #332C39;
