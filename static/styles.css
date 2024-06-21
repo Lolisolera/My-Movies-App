@@ -23,6 +23,7 @@ h1.margin {
     margin-bottom: 40px;
 }
 
+
 .movie {
     width: 500px;
     height: 400px;
@@ -31,7 +32,6 @@ h1.margin {
     display: flex;
     justify-content: center;
 }
-
 
 
 h2 {
