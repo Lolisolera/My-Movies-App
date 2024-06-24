@@ -17,7 +17,7 @@
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 
     {% block title %}
-    <title>Home Page</title>
+    <title>Movies Menu Page</title>
     {% endblock %}
 
 
@@ -39,9 +39,16 @@
 
     {% block content %}
 
-    <h1>Home</h1>
+    <h1 class="margin">My Movies App</h1>
 
-    <a href="/menu"><img class="movie" src="static/images/film.png" alt="Movie image"></a>
+    <h2>Select from the menu:</h2>
+    <ol>
+        <li><a href="/list">Movies list</a></li>
+        <li><a href="/add">Add a movie</a></li>
+        <li><a href="/update">Update a movie</a></li>
+        <li><a href="/delete">Delete a movie</a></li>
+        <li><a href="/exit">Exit My Movies App</a></li>
+    </ol>
 
     {% endblock %}
 
