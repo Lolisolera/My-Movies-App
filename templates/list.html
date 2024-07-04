@@ -10,8 +10,12 @@
 <h1 class="margin">Movies List</h1>
 <ul>
     {% for film in films %}
-    <li>{{ film.filmID }}: {{ film.title }} - {{ film.yearReleased }} - {{ film.rating }} - {{ film.duration }} - {{
-        film.genre }}</li>
+    <li>
+        <a href="{{ url_for('update', filmID=film.filmID) }}">
+            {{ film.filmID }}: {{ film.title }} - {{ film.yearReleased }} - {{ film.rating }} - {{ film.duration }} - {{
+            film.genre }}
+        </a>
+    </li>
     {% endfor %}
 </ul>
 

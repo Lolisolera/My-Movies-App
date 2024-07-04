@@ -1,13 +1,32 @@
-{%extends 'base.html' %}
-
+{% extends 'base.html' %}
 
 {% block title %}
 <title>Update Movies Page</title>
 {% endblock %}
 
-
 {% block content %}
 <h1 class="margin">Update Movie</h1>
+{% if film %}
+<form action="/update" method="post">
+    <input type="hidden" name="filmID" value="{{ film.filmID }}">
+    <label for="filmID">Movie ID:</label>
+    <input type="text" id="filmID" name="filmID" value="{{ film.filmID }}" readonly>
+    <br>
+    <label for="field">Choose a Field to Update:</label>
+    <select id="field" name="field">
+        <option value="title">Title</option>
+        <option value="yearReleased">Year Released</option>
+        <option value="rating">Rating</option>
+        <option value="duration">Duration</option>
+        <option value="genre">Genre</option>
+    </select>
+    <br>
+    <label for="newValue">New Value:</label>
+    <input type="text" id="newValue" name="newValue" required>
+    <br><br>
+    <button class="button" type="submit">Update Movie</button>
+</form>
+{% else %}
 <form action="/update" method="post">
     <label for="filmID">Movie ID:</label>
     <input type="text" id="filmID" name="filmID" required>
@@ -22,10 +41,9 @@
     </select>
     <br>
     <label for="newValue">New Value:</label>
-    <input type="text" id="newValue" name="newValue">
+    <input type="text" id="newValue" name="newValue" required>
     <br><br>
     <button class="button" type="submit">Update Movie</button>
-
 </form>
-
+{% endif %}
 {% endblock %}

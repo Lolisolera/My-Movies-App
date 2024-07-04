@@ -137,7 +137,8 @@ def menu():
 
 
 @app.route("/update", methods=["GET", "POST"])
-def update():
+@app.route("/update/<int:filmID>", methods=["GET", "POST"])
+def update(filmID=None):
     if request.method == "POST":
         film_id = request.form.get('filmID')
         film = Film.query.get(film_id)
@@ -154,7 +155,12 @@ def update():
         else:
             return "Film not found."
 
+    if filmID:
+        film = Film.query.get(filmID)
+        return render_template("update.html", film=film)
     return render_template("update.html")
+
+
 
 
 
