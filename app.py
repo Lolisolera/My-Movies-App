@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_restful import Api, Resource
-from datetime import datetime 
+from datetime import datetime
 import re
 
 
@@ -9,7 +9,7 @@ app = Flask(__name__, static_url_path="/static")
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////Users/mariadoloressoleramarquez/BOOTCAMP-W10-PYTHON/Flask-API/data/filmflix.db'
 
 db = SQLAlchemy(app)
-api = Api(app)
+api = Api(app)iyfhco
 
 
 class Film(db.Model):
@@ -33,12 +33,12 @@ def base():
 
 
         # Validation check for yearReleased
-       
+
 @app.route("/add", methods=["GET", "POST"])
 def add():
     if request.method == "POST":
         title = request.form.get('title')
-        
+
         # Check if 'rating' field is present in the form data
         rating_str = request.form.get('rating')
         if rating_str is None:
